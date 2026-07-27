@@ -23,7 +23,7 @@ An end-to-end Multimodal AI Medical Assistant that combines Optical Character Re
 ---
 ## 🛠️ Tech Stack
 
-Python • FastAPI • Streamlit • LangChain • ChromaDB • Groq Llama 3.3 • EasyOCR 
+#### Python • FastAPI • Streamlit • LangChain • ChromaDB • Groq Llama 3.3 • EasyOCR 
 • OpenCV • Whisper • SQLite • HuggingFace Embeddings • PyPDF • Docker
 ---
 
