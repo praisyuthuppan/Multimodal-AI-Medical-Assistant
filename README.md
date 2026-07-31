@@ -1,5 +1,6 @@
-# Multimodal-AI-Medical-Assistant
-An end-to-end Multimodal AI Medical Assistant that combines Optical Character Recognition (OCR), Speech Recognition, Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs) to help users understand medical documents and answer general medical education questions.
+# 🩺 Multimodal AI Medical Assistant
+
+An **end-to-end Multimodal AI Medical Assistant** that leverages **Retrieval-Augmented Generation (RAG)**, **Large Language Models (LLMs)**, **Optical Character Recognition (OCR)**, and **Speech Recognition** to help users understand medical documents and ask general medical education questions. The application supports intelligent analysis of PDF reports, prescription images, and voice recordings through a context-aware AI workflow.
 
 ---
 
@@ -7,24 +8,54 @@ An end-to-end Multimodal AI Medical Assistant that combines Optical Character Re
 
 ### 📄 Medical Document Analysis
 - Upload PDF medical reports
-- Upload prescription/laboratory images
+- Upload prescription and laboratory images
 - Upload voice recordings
-- Automatic text extraction
-- AI-powered report summarization
-- Document-specific Question Answering using RAG
+- Automatic text extraction using OCR and speech recognition
+- AI-powered medical report summarization
+- Context-aware document question answering using RAG
 - Medical terminology explanation
-- Text-to-Speech responses
+- Text-to-Speech (TTS) responses
+- Document lifecycle management
 
-### 🩺 General Medical Assistant
-- Ask medical education questions without uploading documents
-- AI-generated medical explanations
-- Emergency keyword detection with safety response
+### 📄 General Medical Assistant
+- Ask general medical education questions without uploading documents
+- AI-generated educational responses powered by LLMs
+- Emergency keyword detection with safety guidance
 
 ---
-## 🛠️ Tech Stack
 
-#### Python • FastAPI • Streamlit • LangChain • ChromaDB • Groq Llama 3.3 • EasyOCR 
-####  OpenCV • Whisper • SQLite • HuggingFace Embeddings • PyPDF • Docker
+## 🛠 Tech Stack
+
+**Programming Language**
+- Python
+
+**Backend**
+- FastAPI
+- SQLite
+
+**Frontend**
+- Streamlit
+
+**Generative AI**
+- Groq Llama 3.3 (70B)
+- LangChain
+- HuggingFace Sentence Transformers
+- Retrieval-Augmented Generation (RAG)
+
+**Vector Database**
+- ChromaDB
+
+**Document Processing**
+- PyPDF
+- EasyOCR
+- OpenCV
+
+**Speech Processing**
+- Whisper Large V3 Turbo
+
+**Speech Output**
+- gTTS (Text-to-Speech)
+
 ---
 
 ## 🏗 System Workflow
@@ -36,7 +67,7 @@ User
  │
  ▼
 Text Extraction
-(PDF | OCR | Whisper)
+(PDF | EasyOCR | Whisper)
  │
  ▼
 Text Chunking
@@ -48,10 +79,10 @@ Sentence Transformer Embeddings
 ChromaDB Vector Store
  │
  ▼
-Retrieval-Augmented Generation (RAG)
+Semantic Retrieval (RAG)
  │
  ▼
-Groq Llama 3.3 70B
+Groq Llama 3.3
  │
  ▼
 AI Response
@@ -64,7 +95,7 @@ Streamlit Interface
 
 ## 📂 Project Structure
 
-```
+```text
 AI-Medical-Assistant/
 │
 ├── backend/
@@ -77,29 +108,33 @@ AI-Medical-Assistant/
 ├── data/
 │
 ├── requirements.txt
-├── Dockerfile
-
+└── README.md
 ```
 
-## 📌 Key Highlights
+---
 
-- Multimodal AI application supporting PDF, Image, and Voice inputs
-- Retrieval-Augmented Generation (RAG) for document-grounded responses
-- OCR using EasyOCR with OpenCV preprocessing
-- Speech-to-text using Whisper Large V3 Turbo
-- Context-aware medical report summarization
-- General medical education assistant
-- Vector search using ChromaDB
-- FastAPI REST APIs with Streamlit frontend
-- Docker-ready architecture
+## 🚀 Key Highlights
+
+- Built an **end-to-end Multimodal AI application** integrating OCR, Speech Recognition, Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs).
+- Developed a **context-aware medical document understanding system** capable of processing PDF reports, prescription images, and voice recordings.
+- Implemented a **RAG pipeline** using LangChain, ChromaDB, and HuggingFace Sentence Transformers for semantic retrieval and document-grounded AI responses.
+- Designed separate AI workflows for **medical document analysis** and **general medical education**.
+- Developed a modular application using **FastAPI**, **Streamlit**, and **SQLite**, enabling REST APIs, report summarization, contextual question answering, and Text-to-Speech.
+
+---
+
+## 📚 Future Enhancements
+
+- Multi-document support
+- Conversational memory for follow-up questions
+- Enhanced retrieval and reranking strategies
+- Cloud deployment
+- Authentication and user management
+- Improved OCR support for handwritten prescriptions
 
 ---
 
 ## ⚠ Disclaimer
 
-This application is designed for educational purposes only.
-It does not diagnose diseases, prescribe medications, or replace professional medical advice.
-Always consult a qualified healthcare professional before making medical decisions.
-
----
+This application is developed for **educational and informational purposes only**. It is designed to help users understand medical documents and provide general medical education. It **does not diagnose diseases, prescribe medications, or replace professional medical advice**. Always consult a qualified healthcare professional before making medical decisions.
 
